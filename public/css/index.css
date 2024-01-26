@@ -1,247 +1,1041 @@
 .task1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
 }
-
+.task1 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
 .task2 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
 }
-
+.task2 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
 .task3 {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px 10px;
+  padding: 20px;
 }
-
+.task3 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+.task3 .item1 {
+  background-color: #f0f0f0;
+}
+.task3 .item2 {
+  background-color: #e0e0e0;
+}
+.task3 .item3 {
+  background-color: #d0d0d0;
+}
+.task3 .item4 {
+  background-color: #c0c0c0;
+}
+.task3 .item5 {
+  background-color: #b0b0b0;
+}
+.task3 .item6 {
+  background-color: #a0a0a0;
+}
 .task4 {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+.task4 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+.task4 .item1 {
+  order: 1;
 }
 .task4 .item2 {
-}
-.task4 .item4 {
+  order: 2;
 }
 .task4 .item3 {
+  order: 3;
 }
-
+.task4 .item4 {
+  order: 4;
+}
+.task4 .item5 {
+  order: 5;
+}
+.task4 .item6 {
+  order: 6;
+}
 .task5 {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
 }
-
+.task5 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+.task5 .item:nth-child(1) {
+  grid-column-start: 1;
+}
+.task5 .item:nth-child(2) {
+  grid-column-start: 1;
+}
+.task5 .item:nth-child(3) {
+  grid-column-start: 1;
+}
+.task5 .item:nth-child(4) {
+  grid-column-start: 2;
+}
+.task5 .item:nth-child(5) {
+  grid-column-start: 2;
+}
+.task5 .item:nth-child(6) {
+  grid-column-start: 3;
+}
 .task6 {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
 }
-
+.task6 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+.task6 .item:nth-child(1) {
+  grid-column-end: span 2;
+}
+.task6 .item:nth-child(2) {
+  grid-column-end: span 2;
+}
+.task6 .item:nth-child(3) {
+  grid-column-end: span 1;
+}
+.task6 .item:nth-child(4) {
+  grid-column-end: span 1;
+}
+.task6 .item:nth-child(5) {
+  grid-column-end: span 1;
+}
+.task6 .item:nth-child(6) {
+  grid-column-end: span 1;
+}
 .task7 {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
 }
-
+.task7 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+.task7 .item:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
+.task7 .item:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
+.task7 .item:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+.task7 .item:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+}
+.task7 .item:nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+}
+.task7 .item:nth-child(6) {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+}
 .task8 {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+.task8 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
 }
 
+/* Визначте, на якому стовпці розташовується елемент */
+.task8 .item:nth-child(1) {
+  grid-column: 1 / span 1;
+}
+
+.task8 .item:nth-child(2) {
+  grid-column: 2 / span 1;
+}
+
+.task8 .item:nth-child(3) {
+  grid-column: 3 / span 1;
+}
+
+.task8 .item:nth-child(4) {
+  grid-column: 1 / span 1;
+}
+
+.task8 .item:nth-child(5) {
+  grid-column: 2 / span 1;
+}
+
+.task8 .item:nth-child(6) {
+  grid-column: 3 / span 1;
+}
 .task9 {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  padding: 10px 20px;
 }
-
+.task9 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
 .task10 {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  justify-content: space-between;
+  padding: 10px;
+}
+.task10 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
 }
 
 .task11 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 10px; /* відстань між елементами */
+  padding: 10px; /* внутрішній відступ для елемента .task11 */
 }
-
+.task11 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
 .task12 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 10px; /* відстань між елементами */
+  padding: 10px; /* внутрішній відступ для елемента .task12 */
 }
-
+.task12 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
+.task12 .item:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+.task12 .item:nth-child(4) {
+  grid-column: 1 / span 2;
+}
 .task13 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 10px; /* відстань між елементами */
+  justify-content: space-between; /* розміщення елементів з однаковими відстанями від країв блоку */
+  padding: 10px; /* внутрішній відступ для елемента .task13 */
 }
-
+.task13 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
+.task13 .item:nth-child(1) {
+  grid-column: span 2;
+}
+.task13 .item:nth-child(4) {
+  grid-column: span 2;
+}
 .task14 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 10px; /* відстань між елементами */
+  justify-content: center; /* розміщення елементів по центру другої лінії */
+  padding: 10px; /* внутрішній відступ для елемента .task14 */
+}
+.task14 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
 }
 
+/* Визначте, на якому рядку починати для кожного елемента */
+.task14 .item:nth-child(1) {
+  grid-column: span 2;
+}
+
+.task14 .item:nth-child(4) {
+  grid-column: span 2;
+}
 .task15 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 10px; /* відстань між елементами */
+  padding: 10px; /* внутрішній відступ для елемента .task15 */
+}
+
+.task15 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
+
+/* Визначте, з якого і до якого стовпця розташовується другий рядок */
+.task15 .item:nth-child(1),
+.task15 .item:nth-child(2),
+.task15 .item:nth-child(3),
+.task15 .item:nth-child(4),
+.task15 .item:nth-child(5),
+.task15 .item:nth-child(6) {
+  grid-column: span 2;
 }
 
 .task16 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 10px; /* відстань між елементами */
+  justify-content: start; /* розміщення елементів без відступів від країв блоку */
+  padding: 10px; /* внутрішній відступ для елемента .task16 */
 }
-
+.task16 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
 .task17 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  justify-content: space-evenly; /* розміщення елементів з однаковими відстанями між ними */
+  padding: 10px 20px; /* внутрішній відступ для елемента .task17 */
 }
-
+.task17 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
 .task18 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  );
+  grid-gap: 20px;
+  justify-content: space-around;
+  padding: 10px;
+}
+.task18 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }
 
 .task19 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  justify-content: start; /* розміщення елементів на початку першої лінії */
+  align-items: center; /* розміщення елементів по центру другої лінії */
+  padding: 10px; /* внутрішній відступ для елемента .task19 */
 }
-
+.task19 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
 .task20 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  justify-content: start; /* розміщення елементів на початку першої лінії */
+  padding: 10px; /* внутрішній відступ для елемента .task20 */
 }
-
+.task20 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
 .task21 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  justify-content: end; /* розміщення елементів в кінці першої лінії */
+  padding: 10px; /* внутрішній відступ для елемента .task21 */
 }
-
+.task21 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
 .task22 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  justify-content: center; /* розміщення елементів по центру першої лінії */
+  padding: 10px; /* внутрішній відступ для елемента .task22 */
+}
+.task22 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
 }
 
 .task23 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  padding: 10px; /* внутрішній відступ для елемента .task23 */
+}
+
+.task23 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
 }
 
 .task24 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  grid-auto-rows: minmax(
+    100px,
+    auto
+  ); /* Мінімальна висота для рядка */
+  padding: 10px; /* внутрішній відступ для елемента .task24 */
+}
+.task24 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
+.task24 > :nth-child(7),
+.task24 > :nth-child(8),
+.task24 > :nth-child(9),
+.task24 > :nth-child(10),
+.task24 > :nth-child(11),
+.task24 > :nth-child(12) {
+  grid-column: span 2; /* Розтягування елементів на дві комірки */
 }
 
 .task25 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  grid-auto-rows: minmax(
+    100px,
+    auto
+  ); /* Мінімальна висота для рядка */
+  padding: 10px; /* внутрішній відступ для елемента .task25 */
+}
+.task25 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
+.task25 > :nth-child(7),
+.task25 > :nth-child(8),
+.task25 > :nth-child(9),
+.task25 > :nth-child(10),
+.task25 > :nth-child(11),
+.task25 > :nth-child(12) {
+  grid-column: span 2; /* Розтягування елементів на дві комірки */
+}
+
+.task25 > :nth-child(n + 13) {
+  grid-column: span 3; /* Розтягування елементів на три комірки */
 }
 
 .task26 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* відстань між елементами */
+  grid-auto-rows: minmax(
+    100px,
+    auto
+  ); /* Мінімальна висота для рядка */
+  padding: 10px; /* внутрішній відступ для елемента .task26 */
+}
+.task26 .item {
+  border: 1px solid #000; /* рамка для елементів */
+  padding: 10px; /* внутрішній відступ для елементів */
+  text-align: center; /* центрування тексту */
+}
+.task26 > :nth-child(7),
+.task26 > :nth-child(8),
+.task26 > :nth-child(9),
+.task26 > :nth-child(10),
+.task26 > :nth-child(11),
+.task26 > :nth-child(12) {
+  grid-column: span 2; /* Розтягування елементів на дві комірки */
 }
 
+.task26 > :nth-child(n + 13) {
+  grid-column: span 3; /* Розтягування елементів на три комірки */
+}
+
+.task26 > :nth-child(n + 19) {
+  grid-column: span 4; /* Розтягування елементів на чотири комірки */
+}
 .task27 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Заповнення лінії з елементами */
+  grid-gap: 20px; /* Відстань між елементами */
+  padding: 10px; /* Внутрішній відступ для елемента .task27 */
 }
-
+.task27 .item {
+  border: 1px solid #000; /* Рамка для елементів */
+  padding: 10px; /* Внутрішній відступ для елементів */
+  text-align: center; /* Центрування тексту */
+}
+.task27 > :nth-child(n + 7) {
+  display: none; /* Сховати елементи, починаючи з 7-го */
+}
 .task28 {
   display: grid;
+  flex-wrap: wrap;
 }
-
+.task28 .item {
+  border: 1px solid #000; /* Рамка для елементів */
+  padding: 10px; /* Внутрішній відступ для елементів */
+  text-align: center; /* Центрування тексту */
+  flex: 1; /* Рівномірне розподіл елементів по ширині */
+}
+.task28 .item3,
+.item6 {
+  flex: 2; /* Збільшити ширину елементів 3 та 6 */
+}
 .task29 {
   display: grid;
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /* Розподіл колонок */
+  align-items: center; /* Вирівнювання елементів по центру по вертикалі */
 }
-
+.task29 .item {
+  border: 1px solid #000; /* Рамка для елементів */
+  padding: 10px; /* Внутрішній відступ для елементів */
+  text-align: center; /* Центрування тексту */
+  flex: 1; /* Зробити елементи розтягуваними по горизонталі */
+}
 .task30 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.task30 .item {
+  border: 1px solid #000; /* Рамка для елементів */
+  padding: 10px; /* Внутрішній відступ для елементів */
+  text-align: center; /* Центрування тексту */
+  flex: 1; /* Зробити елементи розтягуваними по горизонталі */
 }
 .task30 .item1 {
+  justify-self: start;
 }
 
 .task31 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.task31 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }
 .task31 .item2 {
+  justify-self: start;
 }
 
 .task32 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.task32 .item {
+  border: 1px solid #000; /* Рамка для елементів */
+  padding: 10px; /* Внутрішній відступ для елементів */
+  text-align: center; /* Центрування тексту */
 }
 .task32 .item3 {
+  justify-self: center; /* Вирівнювання item3 по центру лінії */
 }
 
 .task33 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.task33 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }
 .task33 .item4 {
+  grid-column: span 2;
 }
 
 .task34 {
   display: grid;
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /* Розподіл колонок */
+  grid-auto-rows: minmax(100px, auto); /* Висота рядків */
+}
+.task34 .item {
+  border: 1px solid #000; /* Рамка для елементів */
+  padding: 10px; /* Внутрішній відступ для елементів */
+  text-align: center; /* Центрування тексту */
 }
 .task34 .item1 {
+  grid-row: 2; /* Вирівнювання item1 по другому рядку */
 }
 
 .task35 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+.task35 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }
 .task35 .item2 {
+  grid-row: 2;
+  grid-column: 6;
 }
 
 .task36 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+.task36 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }
 .task36 .item3 {
+  grid-row: 2;
+  grid-column: 3 / span 2;
 }
 
 .task37 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+.task37 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }
 .task37 .item4 {
+  grid-row: 2 / span 2;
 }
 
 .task38 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+.task38 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }
 .task38 .item5 {
+  grid-row: 1;
+  grid-column: 3 / span 2;
 }
 
 .task39 {
   display: grid;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+.task39 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Задайте відношення розмірів 1/2/3 для елементів */
+.task39 .item:nth-child(1) {
+  grid-row: span 1;
+}
+
+.task39 .item:nth-child(2) {
+  grid-row: span 2;
+}
+
+.task39 .item:nth-child(3) {
+  grid-row: span 3;
+}
+
+.task39 .item:nth-child(4) {
+  grid-row: span 1;
+}
+
+.task39 .item:nth-child(5) {
+  grid-row: span 2;
+}
+
+.task39 .item:nth-child(6) {
+  grid-row: span 3;
 }
 
 .task40 {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.task40 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  max-width: 100%; /* Забороняємо елементам виходити за межі своїх стовпців */
+}
+
+/* Задаємо розміри для кожного елемента */
+.task40 .item:nth-child(1),
+.task40 .item:nth-child(6) {
+  grid-column: span 1;
+}
+
+.task40 .item:nth-child(2),
+.task40 .item:nth-child(3),
+.task40 .item:nth-child(4),
+.task40 .item:nth-child(5),
+.task40 .item:nth-child(7) {
+  grid-column: span 2;
 }
 
 .task41 {
   display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Два стовпці з однаковим відношенням розмірів */
+  grid-template-rows: repeat(
+    3,
+    minmax(110px, 30%)
+  ); /* Три рядки від 110px до 30% */
+  gap: 10px; /* Відстань між елементами */
 }
-
+.task41 .item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
 .task42 {
   display: grid;
+  grid-template-areas:
+    'item1 item2 item3'
+    'item4 item5 item6';
+  gap: 10px; /* Відстань між елементами */
+}
+.task42 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
 }
 .task42 .item1 {
+  grid-area: item1;
 }
 .task42 .item2 {
+  grid-area: item2;
 }
 .task42 .item3 {
+  grid-area: item3;
 }
 .task42 .item4 {
+  grid-area: item4;
 }
 .task42 .item5 {
+  grid-area: item5;
 }
 .task42 .item6 {
+  grid-area: item6;
 }
 
 .task43 {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.task43 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+.task43 .item1 {
+  grid-column: span 2; /* Елемент 1 займає два стовпці */
+}
+.task43 .item2 {
+  grid-column: span 1; /* Елемент 2 займає один стовпець */
 }
 .task43 .item3 {
+  grid-column: span 2; /* Елемент 3 займає два стовпці */
 }
-
+.task43 .item4 {
+  grid-column: span 1; /* Елемент 4 займає один стовпець */
+}
+.task43 .item5 {
+  grid-column: span 1; /* Елемент 5 займає один стовпець */
+}
+.task43 .item6 {
+  grid-column: span 3; /* Елемент 6 займає всі три стовпці */
+}
 .task44 {
   display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.task44 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+.task44 .item1 {
+  grid-row: span 1; /* Елемент 1 займає один рядок */
+}
+.task44 .item2 {
+  grid-row: span 2; /* Елемент 2 займає два рядки */
 }
 .task44 .item3 {
+  grid-row: span 1; /* Елемент 3 займає один рядок */
 }
-
+.task44 .item4 {
+  grid-row: span 2; /* Елемент 4 займає два рядки */
+}
+.task44 .item5 {
+  grid-row: span 1; /* Елемент 5 займає один рядок */
+}
+.task44 .item6 {
+  grid-row: span 1; /* Елемент 6 займає один рядок */
+}
 .task45 {
   display: grid;
+  grid-template-areas:
+    'item1 item2'
+    'item3 item4'
+    'item5 item6';
+  gap: 10px; /* Відстань між елементами */
+}
+.task45 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+.task45 .item1 {
+  grid-area: item1;
+}
+.task45 .item2 {
+  grid-area: item2;
 }
 .task45 .item3 {
+  grid-area: item3;
+}
+.task45 .item4 {
+  grid-area: item4;
+}
+.task45 .item5 {
+  grid-area: item5;
+}
+.task45 .item6 {
+  grid-area: item6;
 }
 
 .task46 {
   display: grid;
+  grid-template-columns: min-content max-content;
+  gap: 10px;
+}
+.task46 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+.task46 .item1 {
+  grid-column: 1 / span 1; /* Охоплення 1 стовпця */
 }
 
+.task46 .item2 {
+  grid-column: 2 / span 1; /* Охоплення 1 стовпця */
+}
+
+.task46 .item3 {
+  grid-column: 1 / span 1; /* Охоплення 1 стовпця */
+}
+
+.task46 .item4 {
+  grid-column: 1 / span 1; /* Охоплення 1 стовпця */
+}
+
+.task46 .item5 {
+  grid-column: 2 / span 1; /* Охоплення 1 стовпця */
+}
+
+.task46 .item6 {
+  grid-column: 1 / span 1; /* Охоплення 1 стовпця */
+}
 .task47 {
   display: grid;
+  grid-auto-rows: min-content;
+  gap: 10px; /* Відстань між стовпцями та рядками */
 }
-
+.task47 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+.task47 .item1 {
+  grid-row: auto;
+}
+.task47 .item2 {
+  grid-row: auto;
+}
+.task47 .item3 {
+  grid-row: auto;
+}
+.task47 .item4 {
+  grid-row: auto;
+}
+.task47 .item5 {
+  grid-row: auto;
+}
+.task47 .item6 {
+  grid-row: auto;
+}
 .task48 {
   display: grid;
+  grid-auto-flow: row; /* Автоматичне розміщення за рядками */
+  gap: 10px; /* Відстань між стовпцями та рядками */
 }
-
-.task50 {
-  display: grid;
+.task48 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
 }
-
 .task49 {
   display: grid;
+  grid-auto-flow: column; /* Автоматичне розміщення за стовбцями */
+  gap: 10px; /* Відстань між стовпцями та рядками */
 }
-
+.task49 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+.task50 {
+  display: grid;
+  grid-auto-flow: dense; /* Автоматичне розміщення із заповненням проміжків */
+  gap: 10px; /* Відстань між стовпцями та рядками */
+}
+.task50 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
 .task51 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  );
+  gap: 10px; /* Відстань між стовпцями та рядками */
 }
-
+.task51 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
 .task52 {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  );
+  gap: 10px; /* Відстань між стовпцями та рядками */
+}
+.task52 .item {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Заповнення повний розмір стовпця */
 }
